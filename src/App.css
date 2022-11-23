@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 45%;
+  width: 55%;
   min-height: 600px;
   background: white;
   text-align: center;
@@ -56,7 +56,7 @@ h1 {
   border-radius: 4px 0 0 4px;
   border: 2px solid rgba(17, 122, 255, 1);
   outline: none;
-  width: 320px;
+  width: 65%;
 }
 
 .todo-button {
@@ -74,11 +74,25 @@ h1 {
   text-transform: capitalize;
 }
 
+
 .todo-container {
   display: flex;
   flex-direction: row;
   position: relative;
 }
+
+.todo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  background:rgba(17, 122, 255, 1) 0%;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
 
 .todo-row {
   display: flex;
@@ -132,3 +146,81 @@ span {
   background-color: black;
 }
 
+@media (max-width: 768px) {
+
+  .todo-box {
+  flex-direction: column;
+  margin: 4px auto;
+  color: white;
+  background:rgba(17, 122, 255, 1) 0%;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  } 
+
+  .timerContainer {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    font-size: 19px;
+  }
+
+  .todo-row {
+    text-align: center;
+    align-items: center;
+    padding: 0px 16px;
+  }
+
+}
+@media (max-width: 425px) {
+
+  
+  .todo-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4px auto;
+    /* margin: auto; */
+  }
+
+  .todo-input {
+    display: flex;
+    align-items: center;
+    width: 95%;
+  }
+
+  .todo-button {
+   width: 95%;
+  }
+
+  .todo-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4px auto;
+  color: white;
+  background:rgba(17, 122, 255, 1) 0%;
+  border-radius: 5px;
+  width: 90%;
+  } 
+
+  .timerContainer {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    font-size: 100%;
+  }
+
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .todo-row {
+    text-align: center;
+    font-size: 100%;
+    align-items: center;
+    padding: 0px 16px;
+  }
+
+}

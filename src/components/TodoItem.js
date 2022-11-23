@@ -32,13 +32,14 @@ export default function Todoitem(props) {
 
 
     return (
-        <div className="todo-row">
+        <section className="todo-box">
+
         <div className={todo.completed ? "todo-row complete" : "todo-row"}>
             {/* TAKS INPUT */}
             {todo.text}
          </div> 
 
-         <div className="timerContainer" >
+        <div className="timerContainer" >
         {('0' + Math.floor((time / 6000)%60)).slice(-2)}:
         {/* minute ( 1000 millisecond is a second)*/}
         {('0' + Math.floor((time / 1000)%60)).slice(-2)}:
@@ -68,7 +69,7 @@ export default function Todoitem(props) {
         <RiCloseCircleLine style={{ marginRight: "5"}} onClick={ () => removeTodo(todo.id)}/>
         </div>
 
-    </div>
+    </section>
         
 )
 };
