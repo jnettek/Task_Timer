@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoItem from './components/TodoItem';
+import People from './img/people.svg';
 
 
 function App() {
@@ -36,8 +37,12 @@ function App() {
    
 
   return (
+    <div className='container'>
+
     <div className="todo-app">
       <h1>Task Timer</h1>
+      <p>Get organized and stay on top of your to-do list with our user-friendly Task Timer. 
+        Keep track of your tasks and mark them as complete with a click!</p>
       <TodoForm addTodo={addTodo}/>
       {todos.map((todo)=>{
         return (
@@ -47,9 +52,10 @@ function App() {
           // removeTimer={removeTimer}
           todo={todo} 
           key={todo.id}/>
-        )
-      })}
+          )
+        })}
     </div>
+        </div>
 
   );
 }
