@@ -40,7 +40,7 @@ export default function Todoitem(props) {
          </div> 
 
         <div className="timerContainer" >
-        {('0' + Math.floor((time / 6000)%60)).slice(-2)}:
+        {('0' + Math.floor((time / 60000)%60)).slice(-2)}:
         {/* minute ( 1000 millisecond is a second)*/}
         {('0' + Math.floor((time / 1000)%60)).slice(-2)}:
         {/* minute */}
