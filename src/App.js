@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoItem from './components/TodoItem';
-import People from './img/people.svg';
+import Weather from './components/Weather';
 
 
 function App() {
@@ -38,7 +38,10 @@ function App() {
 
   return (
     <div className='container'>
-
+      <div>
+      <Weather/>
+      {/* <Quotes/> */}
+      </div>
     <div className="todo-app">
       <h1>Task Timer</h1>
       <p>Get organized and stay on top of your to-do list with our user-friendly Task Timer. 
